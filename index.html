@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>INSURREART</title>
+  <link rel="icon" type="image/png" href="img/logo.png">
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      font-size: 2em;
+      margin: 0;
+    }
+    header h1 img {
+      height: 50px; /* wysokość logo */
+      width: auto;
+      border-radius: 5px; /* opcjonalnie zaokrąglone rogi */
+    }
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .book {
+      display: flex;
+      align-items: flex-start;
+      background: #fff;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .book img {
+      width: 150px;
+      height: auto;
+      border-radius: 5px;
+      margin-right: 20px;
+    }
+    .book-content {
+      flex: 1;
+    }
+    .status {
+      font-style: italic;
+      color: #888;
+    }
+    button {
+      background: #3498db;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #2980b9;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #ddd;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>
+      <img src="img/logo.png" alt="Logo wydawnictwa INSURREART">
+      INSURREART
+    </h1>
+    <p>niezależne wydawnictwo bez kompromisów</p>
+  </header>
+
+  <main>
+    <h2>Nasze książki</h2>
+
+    <!-- Dostępna książka -->
+    <div class="book">
+      <img src="img/czarne_znaki_kaede.jpg" alt="Okładka książki 'Czarne znaki: Kaede' przedstawia obraz akwarelowy przedstawiający pędzel do kaligrafii wymieszany z kosmetykami do makijażu, obraz w kolorach brudnych błękitów i sepii">
+      <div class="book-content">
+        <h3>Czarne znaki: Kaede</h3>
+        <p>Autor: Barbara Jeziorek</p>
+	<p>Gatunek: romans obyczajowy we współczesnej Japonii </p>
+<p>Ona – pewna siebie, niezależna, z prestiżową pracą i stabilnym życiem w wielkim mieście.
+</p>
+<p>
+On – wrażliwy, młodszy o osiem lat nauczyciel na prowincji, który marzy o wydaniu tomiku poezji.
+</p>
+<p>
+W świecie pełnym powinności i ról narzuconych z góry, uczucie między Kaede a Satoru staje się wyzwaniem – nie tylko dla nich, lecz także dla otoczenia.
+</p>
+<p>
+Czy da się kochać na przekór temu, co wypada?
+</p>
+<p>
+Poruszający romans obyczajowy osadzony w sercu współczesnej Japonii – o miłości, która wymyka się schematom, i o rolach, które czasem trzeba złamać, by odnaleźć siebie.</p>
+
+        <button onclick="window.location.href='https://www.legimi.pl/ebook-czarne-znaki-kaede-barbara-jeziorek,b1423984.html'">Kup na Legimi</button>
+ <button onclick="window.location.href='https://www.naffy.io/insurreart/'">Kup w sklepie wydawnictwa</button>
+
+      </div>
+    </div>
+
+    <!-- Niedostępna książka -->
+    <div class="book">
+      <img src="img/lustro.jpg" alt="Okładka książki 'Lustro: 150 pytań do poznania siebie' przedstawia akwarelowy obraz łabędzia na jeziorze ze sznurem na szyi, którego koniec znika pod taflą wody, a łabędź patrzy w górę na lecące inne łabędzie sam nie mogąc wzbić się w powietrze">
+      <div class="book-content">
+        <h3>Lustro: 150 pytań do poznania siebie</h3>       
+	<p>Autor: Barbara Jeziorek</p>
+	<p>Gatunek: poradnik psychologiczny</p>
+	<p>To książka-przestrzeń, w której każdy czytelnik staje się autorem własnej opowieści. Zamiast gotowych odpowiedzi znajdziesz tu niebanalne pytania coachingowe, prowadzące krok po kroku do głębszego poznania siebie.</p>
+	<p>
+Czytelnicy mówią, że to książka, którą pisze się o samym sobie — bo każde pytanie otwiera nowy rozdział Twojej historii. To narzędzie refleksji, inspiracji i odkrywania własnych zasobów, które pozwala zatrzymać się na chwilę i spojrzeć na swoje życie z innej strony.</p>
+	<p>
+150 pytań. 150 szans, by usłyszeć siebie. Ten poradnik nie daje gotowych recept — daje Ci coś cenniejszego: możliwość stworzenia własnej mapy, własnej narracji, własnej drogi.
+        </p>
+        <p class="status">Status: nakład wyczerpany, planowane wznowienie cyfrowe</p>
+      </div>
+    </div>
+
+    <!-- Planowana książka -->
+    <div class="book">
+      <img src="img/glina.jpg" alt="Okładka książki 'Glina' przedstawia cyfrowy obraz widoku z okna na ponure miasto oraz wróbla siedzącego na kwitnącej akacji">
+      <div class="book-content">
+        <h3>Glina</h3>
+	<p>Autor: Barbara Jeziorek</p>
+	<p>Gatunek: dramat psychologiczny </p>
+	<p>
+	Po tragicznej śmierci brata i nagłej utracie pracy, Isin zamyka się w sobie — i w świecie twórczej wyobraźni, którą wyraża poprzez malarstwo. Najdrobniejsze codzienne czynności, jak choćby wyniesienie śmieci, pochłaniają ogromną ilość psychicznej energii. O szukaniu nowej pracy nie ma mowy — to zadanie odkładane na wieczne jutro, a pieniądze się kończą.</p>
+	<p>
+	Malarstwo staje się dla Isina bezpieczną przystanią, coraz bardziej izolującą go od świata zewnętrznego. Ale to właśnie tam, w tej przestrzeni, odnajduje coś, co przypomina nadzieję — i odpowiedź na pytanie, dlaczego w sztuce coś się udaje, a w życiu nie.
+	</p>
+	<p>	
+	Glina to zaproszenie do umysłu osoby pogrążonej w głębokiej depresji. Nie pokazuje jej jako „smutku”, lecz jako zniekształconą percepcję rzeczywistości, w której nawet najprostsze bodźce potrafią ranić, a to, co dla innych jest oczywiste — staje się niemożliwe lub nadludzko trudne.
+	</p>
+
+<p>TW: Tekst porusza tematykę głębokiego kryzysu psychicznego i izolacji. Dla niektórych czytelników może być emocjonalnie wymagający.</p>
+        <p class="status">Status: w przygotowaniu</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 INSURREART
+  </footer>
+</body>
+</html>
