@@ -13,6 +13,14 @@
     color: #333;
   }
 
+  button:disabled {
+  background: #ccc;     
+  color: #666;          
+  cursor: not-allowed;  
+  opacity: 0.7;         
+}
+
+
   header {
     background: #2c3e50;
     color: #fff;
@@ -62,6 +70,7 @@
 
   .book-content {
     flex: 1;
+    gap: 10px;
   }
 
   .status {
@@ -76,6 +85,8 @@
     padding: 10px 15px;
     border-radius: 3px;
     cursor: pointer;
+    
+      margin-bottom: 14px;
   }
 
   button:hover {
@@ -98,6 +109,7 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
+      gap: 4px;
     }
 
     .book img {
@@ -163,8 +175,9 @@ Czy da się kochać na przekór temu, co wypada?
 <p>
 Poruszający romans obyczajowy osadzony w sercu współczesnej Japonii – o miłości, która wymyka się schematom, i o rolach, które czasem trzeba złamać, by odnaleźć siebie.</p>
 
+<button onclick="window.location.href='https://www.naffy.io/insurreart/'">Kup w sklepie wydawnictwa</button>
         <button onclick="window.location.href='https://www.legimi.pl/ebook-czarne-znaki-kaede-barbara-jeziorek,b1423984.html'">Kup na Legimi</button>
- <button onclick="window.location.href='https://www.naffy.io/insurreart/'">Kup w sklepie wydawnictwa</button>
+ <button disabled>Kup na Amazon (wkrótce)</button>
 
       </div>
     </div>
