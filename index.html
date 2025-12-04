@@ -4,77 +4,130 @@
   <meta charset="UTF-8">
   <title>INSURREART</title>
   <link rel="icon" type="image/png" href="img/logo.png">
-    <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #2c3e50;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    color: #333;
+  }
+
+  header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 2em;
+    margin: 0;
+    flex-wrap: wrap; /* pozwala zawijać elementy na małych ekranach */
+  }
+
+  header h1 img {
+    height: 50px;
+    width: auto;
+    border-radius: 5px;
+  }
+
+  main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .book {
+    display: flex;
+    align-items: flex-start;
+    background: #fff;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .book img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+
+  .book-content {
+    flex: 1;
+  }
+
+  .status {
+    font-style: italic;
+    color: #888;
+  }
+
+  button {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #2980b9;
+  }
+
+  footer {
+    text-align: center;
+    padding: 15px;
+    background: #ddd;
+    margin-top: 30px;
+  }
+
+  @media (max-width: 768px) {
     header h1 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 15px;
-      font-size: 2em;
-      margin: 0;
+      font-size: 1.5em;
     }
-    header h1 img {
-      height: 50px; /* wysokość logo */
-      width: auto;
-      border-radius: 5px; /* opcjonalnie zaokrąglone rogi */
-    }
-    main {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
+
     .book {
-      display: flex;
-      align-items: flex-start;
-      background: #fff;
-      padding: 15px;
-      margin: 15px 0;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .book img {
-      width: 150px;
-      height: auto;
-      border-radius: 5px;
-      margin-right: 20px;
-    }
-    .book-content {
-      flex: 1;
-    }
-    .status {
-      font-style: italic;
-      color: #888;
-    }
-    button {
-      background: #3498db;
-      color: #fff;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 3px;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #2980b9;
-    }
-    footer {
+      flex-direction: column;
+      align-items: center;
       text-align: center;
-      padding: 15px;
-      background: #ddd;
-      margin-top: 30px;
     }
-  </style>
+
+    .book img {
+      width: 100%;
+      max-width: 250px;
+      margin: 0 0 15px 0;
+    }
+
+    main {
+      padding: 10px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.2em;
+      gap: 10px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 1em;
+    }
+
+    .book img {
+      max-width: 200px;
+    }
+  }
+</style>
+
 </head>
 <body>
   <header>
